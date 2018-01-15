@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %} Strona Główna {% endblock %}
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h1>Zasady</h1>
+        <h2>Rozdanie kart</h2>
+        <p class="lead">
+	    Gra się talią 24 kart.
+	    Na początku jeden z graczy rozdaje karty, liczba kart rozdawanych poszczególnym graczom zależy od liczby uczestników gry:<br>
+        2 graczy - 10 kart, 2 musiki (po 2 karty) leżą zakryte, gracz po wygranej licytacji wybiera jeden musik i dokłada do swoich kart, po czym odrzuca 2 swoje karty kładąc je zakryte. Po skończonej grze te cztery karty dokłada się do stosu tego gracza, który wziął ostatnią lewę.<br>
+        3 graczy - po 7 kart, 3 karty składają się na musik<br>
+        4 graczy - 3 graczy dostaje po 7 kart, 3 karty zakryte zostają odkryte po licytacji i 4 graczowi, który nie dostał żadnych kart, zapisuje się punkty za meldunki w wartości meldunków i za każdego asa 50 punktów)<br>
+        </p>
+        <h2>Licytacja</h2>
+	    <p class="lead">Licytacja polega na wyłonieniu osoby, która weźmie musik i będzie rozpoczynała partię. Jednakże osoba, która wygra licytację, będzie zobowiązana do zdobycia tylu punktów, ile zadeklaruje – w przeciwnym razie zostaną jej one odpisane od wyniku. <br>
+        Licytacja rozpoczyna się od 100 punktów, a kolejny gracz może spasować. Jeśli gracz raz spasował, nie bierze udziału w dalszej licytacji. <br>
+        Licytuje się operując wielokrotnościami liczby 10.<br>
+        Nie można licytować wyżej niż maksymalna liczba punktów do zdobycia z kartami na ręce, czyli 120 bez meldunków, 160 z parą pików, 180 z parą trefl, 300 z parami kier i karo, 360 z meldunkami kier, karo, trefl.<br>
+        Osoba, która zadeklarowała najwięcej bierze musik i będzie rozpoczynała partię. <br>
+        <h2>Ustalenie wartości kontraktu (o ile punktów się gra)</h2>
+        <p class="lead">
+	    Bezpośrednio po licytacji gracz, który ją wygrał, odsłania musik, by wszyscy gracze mogli go zobaczyć, po czym go zabiera. <br>
+        Wyjątkiem jest sytuacja, gdy gracz mający „sto” jest grającym ze względu na brak przebijającej licytacji, wtedy nie ma obowiązku pokazywać kart „z musiku” innym graczom. Grający dokłada karty z musiku do swoich, następnie odrzuca dwie niepotrzebne mu i oddaje po jednej pozostałym graczom lub w przypadku gry dwuosobowej odkłada je na bok. W ten sposób wszyscy gracze mają po osiem kart (lub 10 przy dwóch osobach).<br>
+        Następnie gracz szacuje i deklaruje, jaką liczbę punktów zdobędzie („ugra”). Liczba punktów musi być wielokrotnością liczby 10 i nie może być niższa niż wylicytowana wcześniej.<br>
+        </p>
+        <h2>Rozgrywka</h2>
+        <p class="lead">
+	    Grę rozpoczyna gracz, który wygrał licytację, poprzez wyłożenie dowolnej swojej karty – rozpoczęcie pierwszej lewy. Kolejni gracze dorzucają po jednej swojej karcie.<br>
+        Obowiązują dwie zasady:<br>
+        Dorzucanie do koloru – obowiązuje kolor pierwszej wyłożonej karty.<br>
+        Przebijanie – dorzucanie karty wyższej niż leżąca na stole (dotyczy również atutu).<br>
+        </p>
+        <h2>Podliczenie punktów</h2>
+	    <p class="lead">Gracz, który wygrał licytację: Za zameldowany meldunek gracz dolicza sobie do uzyskanych punktów jego wartość. Po obliczeniu punktów gracz, który wygrał licytację, sprawdza, czy zdobył deklarowaną liczbę punktów, nie może zaokrąglać wyniku. Jeśli tak – dopisuje tylko tę liczbę do swojego wyniku. Jeśli nie – tę liczbę odpisuje się od jego wyniku.
+        Pozostali gracze: Dopisują osiągnięty wynik (łącznie z meldunkami) zaokrąglony do pełnych dziesiątek.
+        </p>
+        <h2>Wygrana</h2>
+        <p class="lead">Wygrywa osoba, która jako pierwsza osiągnie 1000 lub więcej punktów.
+	    W przypadku uzyskania 1000 punktów przez większą liczbą osób wygrywa ta osoba, która uzyska większą liczbę punktów.
+        </p>
+    </div>
+
+
+
+
+{% endblock %}
